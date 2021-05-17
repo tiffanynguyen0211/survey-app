@@ -1,0 +1,27 @@
+// Colors
+// ==========================================================================
+$white-color: #ffffff;
+$black-color: #000000;
+$error-color: #DF653E;
+$primary-color: #282c34;
+$grey-color: #d3d3d3;
+$focus-color: #bbbbbb;
+$secondary-color: #4a566d;
+$tetirary-color: #7b8aa7;
+
+// Breakpoints
+// (Mobile first approach)
+// ==========================================================================
+$screen-sm: 375px; // Small screen / phone (landscape)
+
+$screen-md: 768px; // Medium screen / tablet
+
+$screen-lg: 1024px; // Large screen / tablet-landscape or big-tablet-portrait
+
+$screen-xl: 1366px; // Extra Large screen / big-tablet-landscape or desktop
+
+// Padding
+// ==========================================================================
+$padding-unit: 10px;
+$margin-unit: 10px;
+$main-padding: $padding-unit + 5px;

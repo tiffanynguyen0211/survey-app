@@ -1,0 +1,41 @@
+@use "../../scss/variables.scss";
+
+.Button {
+    padding: variables.$padding-unit;
+    background-color: variables.$secondary-color;
+    border-radius: 2px;
+    color: variables.$white-color;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        background-color: variables.$primary-color;
+    }
+}
+
+.Button--secondary {
+  background-color: variables.$tetirary-color;
+  color: variables.$white-color;
+}
+
+.Button--bare {
+  background-color: transparent;
+  color: inherit;
+
+  &:hover, &:focus {
+    background-color: transparent;
+  }
+}
+
+.Button__Label--hidden {
+  font-size: 0;
+}
+
+.Button--disabled {
+  background-color: variables.$grey-color;
+  color:  variables.$white-color;
+  cursor: initial;
+
+  &:hover, &:focus {
+    background-color: variables.$grey-color;
+  }
+}

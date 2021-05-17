@@ -1,0 +1,28 @@
+@use '../../scss/mixins';
+@use '../../scss/variables.scss';
+
+/** @define SideNav */
+.SideNav {
+    position: relative;
+    left: 0;
+    width: calc(18% - #{variables.$main-padding*2});
+    min-height: 100vh;
+    transition: width 1s;
+    will-change: width;
+
+    &:hover {
+      width: calc(50% - #{variables.$main-padding*2});
+    }
+
+    @include mixins.respond(md) {
+      width: calc(30% - #{variables.$main-padding*2});
+
+      &:hover {
+        width: calc(30% - #{variables.$main-padding*2});
+      }
+    }
+}
+
+.SideNav__Button {
+  padding: variables.$padding-unit;
+}

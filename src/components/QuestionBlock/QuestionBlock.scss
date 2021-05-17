@@ -1,0 +1,40 @@
+@use '../../scss/mixins.scss';
+@use '../../scss/variables.scss';
+
+.QuestionBlock {
+    position: relative;
+    display: flex;
+    flex: 1 0 40%;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 20px -3px rgba(179,179,179,0.77);
+}
+
+.QuestionBlock__Question {
+    font-weight: 700;
+
+    @include mixins.fontSize(20,20);
+}
+
+.QuestionBlock__Answer {
+    position: relative;
+    width: 100%;
+}
+
+.QuestionBlock__Button {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;  
+    border-radius: 50%;
+}
+
+.QuestionBlock__Button--delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.QuestionBlock__Button--top10 {
+    top: 10px;
+}

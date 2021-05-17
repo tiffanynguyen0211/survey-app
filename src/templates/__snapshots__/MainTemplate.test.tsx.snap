@@ -1,0 +1,300 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main App Test Matches snapshot on first render 1`] = `
+<div
+  className="MainTemplate"
+>
+  <header
+    className="Header MainTemplate__Header"
+  >
+    <h1
+      className="Header__Title"
+    >
+      Create Survey App
+    </h1>
+  </header>
+  <main
+    className="MainTemplate__Content"
+  >
+    <nav
+      className="SideNav MainTemplate__SideNav"
+    >
+      <button
+        aria-label="add one more answer"
+        className="Button MainTemplate__Button--desktop"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="Button__Label"
+        >
+          Create New Survey
+        </span>
+      </button>
+      <button
+        aria-label="add one more answer"
+        className="Button MainTemplate__Button--mobile"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 448 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+            />
+          </svg>
+        </span>
+        <span
+          className="Button__Label Button__Label--hidden"
+        >
+          Create New Survey
+        </span>
+      </button>
+    </nav>
+  </main>
+</div>
+`;
+
+exports[`Main App Test Matches snapshot when click to create new survey 1`] = `
+<div
+  className="MainTemplate"
+>
+  <header
+    className="Header MainTemplate__Header"
+  >
+    <h1
+      className="Header__Title"
+    >
+      Create Survey App
+    </h1>
+  </header>
+  <main
+    className="MainTemplate__Content"
+  >
+    <nav
+      className="SideNav MainTemplate__SideNav"
+    >
+      <button
+        aria-label="add one more answer"
+        className="Button MainTemplate__Button--desktop"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="Button__Label"
+        >
+          Create New Survey
+        </span>
+      </button>
+      <button
+        aria-label="add one more answer"
+        className="Button MainTemplate__Button--mobile"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 448 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+            />
+          </svg>
+        </span>
+        <span
+          className="Button__Label Button__Label--hidden"
+        >
+          Create New Survey
+        </span>
+      </button>
+    </nav>
+    <section
+      className="SurveyForm__Wrapper"
+    >
+      <div
+        className="TextField SurveyForm__Title"
+      >
+        <input
+          aria-label="Survey Title"
+          className="TextField__Input"
+          name="New Survey"
+          onChange={[Function]}
+          placeholder=""
+          type="text"
+          value="New Survey"
+        />
+        <label
+          className="TextField__Label"
+          data-content="Survey Title"
+          htmlFor="New Survey"
+        >
+          Survey Title
+        </label>
+      </div>
+      <div
+        className="SurveyForm__Content"
+      >
+        <fieldset
+          className="QuestionBlock"
+        >
+          <div
+            className="TextField QuestionBlock__Question"
+          >
+            <input
+              aria-label="Form Label"
+              className="TextField__Input"
+              name="First Question"
+              onChange={[Function]}
+              placeholder=""
+              type="text"
+              value="First Question"
+            />
+            <label
+              className="TextField__Label"
+              data-content="Question"
+              htmlFor="First Question"
+            >
+              Question
+            </label>
+          </div>
+          <div
+            className="QuestionBlock__Answer"
+          >
+            <div
+              className="TextField QuestionBlock__Answer"
+            >
+              <input
+                aria-label="Form Label"
+                className="TextField__Input"
+                name="First Answer"
+                onChange={[Function]}
+                placeholder=""
+                type="text"
+                value="First Answer"
+              />
+              <label
+                className="TextField__Label"
+                data-content="Answer"
+                htmlFor="First Answer"
+              >
+                Answer
+              </label>
+            </div>
+          </div>
+          <button
+            aria-label="add one more answer"
+            className="Button QuestionBlock__Button"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                strokeWidth="0"
+                style={
+                  Object {
+                    "color": undefined,
+                  }
+                }
+                viewBox="0 0 448 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                />
+              </svg>
+            </span>
+            <span
+              className="Button__Label Button__Label--hidden"
+            >
+              Add Answer
+            </span>
+          </button>
+        </fieldset>
+      </div>
+      <div
+        className="SurveyForm__ButtonGroup"
+      >
+        <button
+          aria-label="add more question"
+          className="Button SurveyForm__Button"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <span>
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 448 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+              />
+            </svg>
+          </span>
+          <span
+            className="Button__Label Button__Label--hidden"
+          >
+            Add Question
+          </span>
+        </button>
+        <button
+          aria-label="click to save"
+          className="Button SurveyForm__Button Button--secondary"
+          disabled={false}
+          onClick={[Function]}
+          type="submit"
+        >
+          <span
+            className="Button__Label"
+          >
+            Save
+          </span>
+        </button>
+      </div>
+    </section>
+  </main>
+</div>
+`;

@@ -1,0 +1,57 @@
+{
+    "[javascript]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+        "editor.formatOnSave": true,
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+        "editor.formatOnSave": true,
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+    },
+    "files.autoSave": "onFocusChange",
+    "git.autofetch": true,
+    "explorer.confirmDelete": false,
+    "editor.renderControlCharacters": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[scss]": {
+        "editor.codeActionsOnSave": {
+            // For Stylelint
+            "source.fixAll.stylelint": true
+        }
+    },
+    "[css]": {
+        "editor.codeActionsOnSave": {
+            // For Stylelint
+            "source.fixAll.stylelint": true
+        }
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Debug Jest Tests",
+                "type": "node",
+                "request": "launch",
+                "runtimeArgs": [
+                    "--inspect-brk",
+                    "${workspaceRoot}/node_modules/.bin/jest",
+                    "--runInBand"
+                ],
+                "console": "integratedTerminal",
+                "internalConsoleOptions": "neverOpen",
+                "port": 9229
+            }
+        ]
+    },
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "editor.formatOnSaveMode": "file"
+}

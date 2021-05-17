@@ -1,0 +1,53 @@
+@use '../../scss/mixins.scss';
+@use '../../scss/variables.scss';
+
+/** @define SurveyForm */
+.SurveyForm__Wrapper {
+    width: 70%;
+    padding: variables.$padding-unit;
+
+}
+
+.SurveyForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.SurveyForm__Title {
+    width: 100%;
+
+    @include mixins.fontSize(30,10);
+}
+
+.SurveyForm__TextInput {
+    width: 100%;
+    padding: 0;
+    border: 1px solid grey;
+
+    @include mixins.respond(md) {
+      margin: 0 0 0 0;
+    }
+}
+  
+.SurveyForm__Button {
+    padding: variables.$padding-unit;
+    margin: variables.$margin-unit;
+
+    &:first-child {
+        margin-bottom: 0;
+    }
+
+    @include mixins.respond(md) {
+        padding: variables.$padding-unit;
+    }
+}
+
+.SurveyForm__Content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.SurveyForm__ButtonGroup {
+    display: flex;
+    flex-direction: column;
+}

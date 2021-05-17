@@ -1,0 +1,71 @@
+@use '../scss/mixins.scss';
+@use '../scss/variables.scss';
+
+/** @define MainTemplate **/
+.MainTemplate__SideNav {
+  padding: variables.$main-padding;
+
+  @include mixins.theme(tertiary);
+}
+
+.MainTemplate__Header {
+  padding: variables.$main-padding;  
+
+  @include mixins.theme(secondary);
+}
+
+.MainTemplate__SearchForm {
+  width: 50%;
+  justify-content: flex-end;
+
+  @include mixins.respond(md) {
+    width: 30%;
+  }
+  @include mixins.respond(lg) {
+    width: 25%;
+  }
+}
+
+.MainTemplate__SearchButton {
+  @include mixins.theme(primary);
+}
+
+.MainTemplate__Content {
+  display: flex;
+
+  @include mixins.theme(primary);
+}
+
+.MainTemplate__Section {
+  padding: variables.$main-padding;
+}
+
+.MainTemplate__Button {
+  width: 100%;
+  margin: variables.$margin-unit 0;
+}
+
+.MainTemplate__Button--desktop {
+  display: none;
+
+  @include mixins.respond(lg) {
+    display: block;
+  }
+}
+
+.MainTemplate__Button--mobile {
+  display: block;
+
+  @include mixins.respond(lg) {
+    display: none;
+  }
+}
+
+.MainTemplate__SideContent {
+  overflow: hidden;
+  list-style-type: none;
+  padding-inline-start: inherit;
+  padding-inline-start: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

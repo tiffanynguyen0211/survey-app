@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json.schemastore.org/prettierrc",
+    "singleQuote": false,
+    "trailingComma": "es5",
+    "overrides": [
+        {
+            "files": ["*.js*", "*.ts*"],
+            "options": {
+                "singleQuote": true,
+                "semi": true,
+                "tabWidth": 4
+            }
+        }
+    ]
+  }

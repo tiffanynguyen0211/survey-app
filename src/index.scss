@@ -1,0 +1,46 @@
+@use './src/scss/reset';
+@use './src/scss/mixins';
+@use './src/scss/variables';
+
+$font-margin: 10px 0;
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font: 100% 'Roboto', arial, sans-serif;
+}
+
+h1 {
+  margin: $font-margin;
+
+  @include mixins.fontSize(21, 25);
+  @include mixins.respond(lg) {
+    @include mixins.fontSize(26, 32);
+  }
+}
+
+p {
+  margin: $font-margin;
+
+  @include mixins.fontSize(16, 20);
+}
+
+input,textarea {
+  font-size: inherit; //prevent auto zoom in on some mobile browsers
+  opacity: 1;
+
+  &:focus {
+   opacity: 1;
+  }
+}
+
+button {
+  cursor: pointer;
+
+  &:hover, &:focus {
+    background-color: #bbbbbb;
+  }
+}

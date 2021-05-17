@@ -1,0 +1,46 @@
+@use '../../scss/mixins';
+@use '../../scss/variables.scss';
+
+.TextField {
+    position: relative;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.TextField__Label {
+    display: block;
+    width: 100%;
+    background-color: white;
+    font-size: 0;
+    line-height: normal;
+    text-transform: uppercase;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        padding: 0 5px;
+        background-color: white;
+        content: attr(data-content);
+        font-size: 0.75rem;
+        transform: translate(10px,-50%);
+        transition: all 0.2s ease;
+        will-change: font-size, top;
+    
+    }
+}
+
+.TextField__Input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    border: none;
+    border: 1px solid variables.$grey-color;
+    background: none;
+    border-radius: 5px;
+
+    &:focus {
+        border-color: variables.$primary-color;
+        outline: none;
+    }
+}
